@@ -1,9 +1,9 @@
 /*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+ ** TailwindCSS Configuration File
+ **
+ ** Docs: https://tailwindcss.com/docs/configuration
+ ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+ */
 module.exports = {
   prefix: '',
   important: false,
@@ -19,12 +19,10 @@ module.exports = {
       darkAccent: '#998079',
       darkShade: '#2C212E',
       lightAccent: '#EBECE9',
-      lightShade: '#92928E',
+      lightShade: '#92928E'
     },
     fontFamily: {
-      body: [
-        'Lato',
-      ],
+      body: ['Lato']
     },
     fontSize: {
       xs: '0.75rem',
@@ -37,9 +35,9 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '5rem',
+      '7xl': '5rem'
     }
   },
   corePlugins: {},
-  plugins: [],
+  plugins: []
 }
