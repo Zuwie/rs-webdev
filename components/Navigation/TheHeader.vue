@@ -18,7 +18,8 @@
     </nuxt-link>
     <div class="block lg:hidden">
       <button
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-primary hover:border-primary"
+        @click="toggleMenu"
+        class="flex items-center px-3 py-2 border rounded hover:text-primary hover:border-primary"
       >
         <svg
           class="fill-current h-3 w-3"
@@ -30,28 +31,31 @@
         </svg>
       </button>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div
+      :class="menuOpen ? 'menu-is-open' : 'menu-is-closed'"
+      class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+    >
       <div class="text-sm lg:flex-grow">
         <nuxt-link
           to="/about"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
           >About</nuxt-link
         >
         <nuxt-link
           to="/portfolio"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
           >Portfolio</nuxt-link
         >
         <nuxt-link
           to="/skills"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
           >Skills</nuxt-link
         >
       </div>
       <div>
         <nuxt-link
           to="/contact"
-          class="inline-block text-sm py-2 leading-none border rounded border-white hover:text-teal-500 mt-4 lg:mt-0"
+          class="inline-block text-sm py-2 leading-none border rounded border-white hover:text-primary mt-4 lg:mt-0"
           >Contact</nuxt-link
         >
       </div>
@@ -61,12 +65,34 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+
+  data() {
+    return {
+      menuOpen: false
+    }
+  },
+
+  methods: {
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen
+    }
+  }
 }
 </script>
 
 <style scoped>
 .nuxt-link-exact-active {
   @apply text-primary;
+}
+
+.menu-is-closed {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-is-closed {
+    display: flex;
+  }
 }
 </style>
