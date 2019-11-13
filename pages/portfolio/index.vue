@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20">
     <div class="px-6 mx-auto max-w-5xl">
-      <h1 class="site-title">About Rafael Seifert</h1>
+      <h1 class="site-title">Portfolio of Rafael Seifert</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fuga fugit
         nam officiis praesentium quis tempore! Deserunt dolores ipsum ullam
