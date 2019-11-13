@@ -1,24 +1,16 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        rs-website
-      </h1>
-      <h2 class="subtitle">
-        Personal website of Rafael Seifert
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="container">
+      <div>
+        <logo />
+        <h1 class="text-6xl">
+          rs-website
+        </h1>
+        <h2 class="subtitle">
+          Personal website of Rafael Seifert
+        </h2>
+
+        <button class="btn btn-primary">Testbutton</button>
       </div>
     </div>
   </div>
@@ -35,39 +27,23 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.btn {
+  @apply font-bold py-2 px-4 rounded bg-darkShade text-white;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.btn:hover {
+  @apply bg-lightShade;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.btn-primary {
+  @apply text-white bg-primary;
 }
 
-.links {
-  padding-top: 15px;
+.btn-primary:hover {
+  @apply bg-lightShade;
 }
 </style>
