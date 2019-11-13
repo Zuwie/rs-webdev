@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <div class="pt-20">
+    <vue-particles color="#998079"></vue-particles>
     <div class="container">
       <div>
         <logo />
         <h1 class="text-6xl">
-          rs-website
+          {{ siteTitle }}
         </h1>
         <h2 class="subtitle">
-          Personal website of Rafael Seifert
+          {{ subTitle }}
         </h2>
 
         <button class="btn btn-primary">Testbutton</button>
@@ -22,13 +23,32 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+      siteTitle: 'RS - Webdeveloper',
+      subTitle: 'Personal website of Rafael Seifert'
+    }
   }
 }
 </script>
 
 <style>
 .container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+  @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
+}
+
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.site-title {
+  @apply font-bold text-primary text-4xl text-center py-4;
 }
 
 .btn {

@@ -1,5 +1,7 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <nav
+    class="flex items-center justify-between flex-wrap bg-white p-6 border-b border-b-2 border-lightShade fixed top-0 left-0 right-0 z-50"
+  >
     <nuxt-link to="/" class="block flex items-center flex-shrink-0 mr-6">
       <svg
         class="fill-current h-8 w-8 mr-2"
@@ -35,24 +37,22 @@
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
           >About</nuxt-link
         >
-        <a
-          href="#responsive-header"
+        <nuxt-link
+          to="/portfolio"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
+          >Portfolio</nuxt-link
         >
-          Examples
-        </a>
-        <a
-          href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary"
+        <nuxt-link
+          to="/skills"
+          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-primary mr-4"
+          >Skills</nuxt-link
         >
-          Blog
-        </a>
       </div>
       <div>
-        <a
-          href="#"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded border-white hover:text-teal-500 mt-4 lg:mt-0"
-          >Contact</a
+        <nuxt-link
+          to="/contact"
+          class="inline-block text-sm py-2 leading-none border rounded border-white hover:text-teal-500 mt-4 lg:mt-0"
+          >Contact</nuxt-link
         >
       </div>
     </div>

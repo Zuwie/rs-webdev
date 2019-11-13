@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-particles'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -53,6 +53,7 @@ export default {
    ** Build configuration
    */
   build: {
+    transpile: ['vue-particles'],
     /*
      ** You can extend webpack config here
      */
