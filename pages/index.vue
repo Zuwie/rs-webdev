@@ -48,7 +48,7 @@ export default {
 }
 
 .site-title {
-  @apply font-bold text-primary text-4xl text-center py-4;
+  @apply font-bold text-primary text-4xl text-center py-16;
 }
 
 .btn {
