@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20">
     <div class="px-6 mx-auto max-w-5xl">
-      <h1 class="site-title">About Rafael Seifert</h1>
+      <h1 class="site-title">{{ siteTitle }}</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fuga fugit
         nam officiis praesentium quis tempore! Deserunt dolores ipsum ullam
@@ -46,4 +46,13 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      siteTitle: 'About Rafael Seifert'
+    }
+  }
+}
+</script>
 <style scoped></style>
