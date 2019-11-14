@@ -1,7 +1,8 @@
 <template>
   <div class="pt-20">
-    <vue-particles color="#998079"></vue-particles>
+    <vue-particles color="#888D7E"></vue-particles>
     <div class="container">
+      <!-- HERO -->
       <div>
         <logo />
         <h1
@@ -16,6 +17,22 @@
         <button class="btn btn-primary">Testbutton</button>
       </div>
     </div>
+
+    <!-- OFFER -->
+    <div class="bg-primary text-white">
+      <div class="p-6 mb-10 mx-auto max-w-5xl">
+        <h2 class="chapter-title text-white">What can I offer you?</h2>
+        <ul>
+          <li>Develop your personal Website using the latest technologies</li>
+          <li>Web Apps shaped to your needs</li>
+          <li>Consulting about the needs of your individual projects</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="p-6 mb-10 mx-auto max-w-5xl">
+      <h2 class="chapter-title text-grey">Why me?</h2>
+    </div>
   </div>
 </template>
 
@@ -23,6 +40,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  layout: 'home',
   components: {
     Logo
   },
@@ -36,19 +54,6 @@ export default {
 </script>
 
 <style>
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  @apply text-primary;
-}
-
-.container {
-  @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
-}
-
 #particles-js {
   position: absolute;
   left: 0;
@@ -56,25 +61,5 @@ a:hover {
   right: 0;
   bottom: 0;
   z-index: -1;
-}
-
-.site-title {
-  @apply font-bold text-primary text-4xl text-center py-16;
-}
-
-.btn {
-  @apply font-bold py-2 px-4 rounded bg-darkShade text-white;
-}
-
-.btn:hover {
-  @apply bg-lightShade;
-}
-
-.btn-primary {
-  @apply text-white bg-primary;
-}
-
-.btn-primary:hover {
-  @apply bg-lightShade;
 }
 </style>
