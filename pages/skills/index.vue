@@ -1,11 +1,9 @@
 <template>
-  <div class="pt-20">
-    <div class="px-6 mx-auto max-w-5xl">
-      <h1 class="site-title">{{ siteTitle }}</h1>
-      <ul>
-        <li v-for="skill in devSkills">{{ skill }}</li>
-      </ul>
-    </div>
+  <div>
+    <h1 class="site-title">{{ siteTitle }}</h1>
+    <ul>
+      <li v-for="skill in devSkills">{{ skill }}</li>
+    </ul>
   </div>
 </template>
 

@@ -1,8 +1,6 @@
 <template>
-  <div class="pt-20">
-    <div class="px-6 mx-auto max-w-5xl">
-      <h1 class="site-title">{{ siteTitle }}</h1>
-    </div>
+  <div>
+    <h1 class="site-title">{{ siteTitle }}</h1>
   </div>
 </template>
 

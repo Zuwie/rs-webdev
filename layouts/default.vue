@@ -1,16 +1,23 @@
 <template>
   <div>
     <TheHeader />
-    <nuxt />
+    <div class="pt-20 min-h-screen">
+      <div class="px-6 mx-auto max-w-5xl">
+        <nuxt />
+      </div>
+    </div>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from '../components/Navigation/TheHeader'
+import TheFooter from '../components/TheFooter'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    TheFooter
   }
 }
 </script>
