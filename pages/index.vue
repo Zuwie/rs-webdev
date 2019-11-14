@@ -41,6 +41,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  @apply text-primary;
+}
+
 .container {
   @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
 }
