@@ -32,6 +32,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: #202227;
 }
 
 *,
@@ -39,5 +40,68 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  @apply text-primary;
+}
+
+.container {
+  @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
+}
+
+.site-title {
+  @apply font-bold text-4xl py-16;
+}
+
+.site-title::before {
+  content: '';
+  display: block;
+  width: 66px;
+  height: 4px;
+  background: #09b3af;
+  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  border-radius: 2px;
+}
+
+.chapter-title {
+  @apply font-bold text-xl mb-8;
+}
+
+.chapter-title::before {
+  content: '';
+  display: block;
+  width: 66px;
+  height: 4px;
+  background: #09b3af;
+  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .chapter-title {
+    @apply text-4xl;
+  }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded bg-darkShade text-white;
+}
+
+.btn:hover {
+  @apply bg-lightShade;
+}
+
+.btn-primary {
+  @apply text-white bg-primary;
+}
+
+.btn-primary:hover {
+  @apply bg-lightShade;
 }
 </style>
