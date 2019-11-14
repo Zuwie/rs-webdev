@@ -34,6 +34,11 @@ export default {
 </script>
 
 <style>
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
 }
