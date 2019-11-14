@@ -19,7 +19,7 @@
           <div class="px-6 py-4 lg:mt-auto">
             <span
               v-for="tag in project.tags"
-              class="inline-block bg-lightAccent rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              class="inline-block bg-lightShade rounded-full px-3 py-1 text-sm font-semibold text-grey mr-2 mb-2"
               >#{{ tag }}</span
             >
           </div>
