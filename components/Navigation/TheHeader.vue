@@ -35,7 +35,7 @@
       :class="menuOpen ? 'menu-is-open' : 'menu-is-closed'"
       class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
     >
-      <div class="text-sm lg:flex-grow">
+      <div class="lg:flex-grow">
         <nuxt-link
           to="/about"
           class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
@@ -55,7 +55,7 @@
       <div>
         <nuxt-link
           to="/contact"
-          class="inline-block text-sm py-2 leading-none border rounded border-white hover:text-primary mt-4 lg:mt-0"
+          class="inline-block py-2 leading-none border rounded border-white hover:text-primary mt-4 lg:mt-0"
           >Contact</nuxt-link
         >
       </div>
