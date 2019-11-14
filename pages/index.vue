@@ -4,10 +4,12 @@
     <div class="container">
       <div>
         <logo />
-        <h1 class="text-6xl">
+        <h1
+          class="font-bold text-primary text-4xl lg:text-6xl text-center mb-6"
+        >
           {{ siteTitle }}
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle mb-4">
           {{ subTitle }}
         </h2>
 
