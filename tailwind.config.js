@@ -14,12 +14,13 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+      grey: '#202227',
 
-      primary: '#F34644',
-      darkAccent: '#998079',
-      darkShade: '#2C212E',
-      lightAccent: '#EBECE9',
-      lightShade: '#92928E'
+      primary: '#09B3AF',
+      darkAccent: '#888D7E',
+      darkShade: '#2B2F43',
+      lightAccent: '#75BFCD',
+      lightShade: '#F8F5F5'
     },
     fontFamily: {
       body: ['Lato']
