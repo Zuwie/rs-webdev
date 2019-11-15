@@ -19,7 +19,8 @@ export default {
         'HTML & CSS',
         'SCSS / LESS',
         'TailwindCSS',
-        'Bootstrap'
+        'Bootstrap',
+        'SEO-Optimization'
       ]
     }
   }

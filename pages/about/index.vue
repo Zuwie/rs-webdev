@@ -9,6 +9,11 @@
       quidem reprehenderit sapiente sed sint tempore tenetur velit vitae
       voluptates!
     </p>
+
+    <div class="inline-block rounded-lg overflow-hidden">
+      <img src="~assets/rafael-seifert.jpg" alt="Picture of Rafael Seifert" />
+    </div>
+
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fuga fugit
       nam officiis praesentium quis tempore! Deserunt dolores ipsum ullam vero?

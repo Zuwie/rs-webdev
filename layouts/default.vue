@@ -52,7 +52,7 @@ a:hover {
 }
 
 .container {
-  @apply min-h-screen relative flex justify-center items-center text-center mx-auto;
+  @apply h-screen relative flex justify-center items-center text-center mx-auto;
 }
 
 .site-title {
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .chapter-title {
-  @apply font-bold text-xl mb-8;
+  @apply font-bold text-3xl mb-8;
 }
 
 .chapter-title::before {
