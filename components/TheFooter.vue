@@ -18,15 +18,22 @@
       <div
         class="copyright block lg:inline-block mr-4 mt-4 lg:mt-0 text-sm text-center"
       >
-        &copy; Copyright 2019, Rafael Seifert
+        &copy; Copyright {{ dateYear }}, Rafael Seifert
       </div>
+      <a href="https://icons8.com" class="hidden"></a>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'TheFooter'
+  name: 'TheFooter',
+
+  computed: {
+    dateYear() {
+      return new Date().getFullYear()
+    }
+  }
 }
 </script>
 
