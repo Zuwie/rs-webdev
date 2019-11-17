@@ -52,7 +52,8 @@ a:hover {
 }
 
 .container {
-  @apply h-screen relative flex justify-center items-center text-center mx-auto;
+  height: calc(100vh - 80px);
+  @apply relative flex justify-center items-center text-center mx-auto;
 }
 
 .site-title {
