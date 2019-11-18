@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/23b8124a-60da-4926-860d-4321ebaba243/deploy-status)](https://app.netlify.com/sites/awesome-kilby-1233ab/deploys)
+
 # rs-website
 
 > Personal website of Rafael Seifert
