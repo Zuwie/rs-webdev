@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="site-title">{{ siteTitle }}</h1>
-    <ul>
-      <li v-for="skill in devSkills">{{ skill }}</li>
+    <ul class="dashed-list">
+      <li v-for="skill in devSkills" class="mb-2">{{ skill }}</li>
     </ul>
   </div>
 </template>
