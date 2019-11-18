@@ -17,45 +17,19 @@
       <span class="font-semibold text-xl tracking-tight">Rafael Seifert</span>
     </nuxt-link>
     <div class="block lg:hidden">
-      <button
-        @click="toggleMenu"
-        class="flex items-center px-3 py-2 border rounded hover:text-primary hover:border-primary"
-      >
-        <svg
-          class="fill-current h-3 w-3"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
+      <ToggleButton v-on:toggleMenu="toggleMenu"></ToggleButton>
     </div>
     <div
       :class="menuOpen ? 'menu-is-open' : 'menu-is-closed'"
-      class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+      class="main-menu w-full flex flex-col lg:flex-row flex-grow items-center justify-center lg:w-auto lg:h-auto overflow-hidden lg:overflow-visible"
     >
-      <div class="lg:flex-grow">
-        <nuxt-link
-          to="/about"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
-          >About</nuxt-link
-        >
-        <nuxt-link
-          to="/portfolio"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
-          >Portfolio</nuxt-link
-        >
-        <nuxt-link
-          to="/skills"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-4"
-          >Skills</nuxt-link
-        >
+      <div class="w-full lg:w-auto lg:flex-grow">
+        <nuxt-link to="/about" class="main-menu-link">About</nuxt-link>
+        <nuxt-link to="/portfolio" class="main-menu-link">Portfolio</nuxt-link>
+        <nuxt-link to="/skills" class="main-menu-link">Skills</nuxt-link>
       </div>
       <div>
-        <nuxt-link
-          to="/contact"
-          class="inline-block py-2 leading-none border rounded border-white hover:text-primary mt-4 lg:mt-0"
+        <nuxt-link to="/contact" class="main-menu-link lg:mr-0"
           >Contact</nuxt-link
         >
       </div>
@@ -64,8 +38,14 @@
 </template>
 
 <script>
+import ToggleButton from './ToggleButton'
+
 export default {
   name: 'Header',
+
+  components: {
+    ToggleButton
+  },
 
   data() {
     return {
@@ -82,12 +62,45 @@ export default {
 </script>
 
 <style scoped>
+.main-menu {
+  height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 1024px) {
+  .main-menu {
+    height: auto;
+  }
+}
+
+.main-menu-link {
+  transition-delay: 0.5s;
+  transform: translateX(-30px);
+  transition: all 0.5s ease;
+  @apply block text-center mt-4 py-6 text-2xl opacity-0;
+}
+
+.main-menu-link:hover {
+  @apply text-primary;
+}
+
+.menu-is-open .main-menu-link {
+  transform: translateX(0);
+  @apply opacity-100;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-menu-link {
+    transform: translateX(0);
+    @apply inline-block text-left mt-0 mr-4 text-base py-0 opacity-100;
+  }
+}
+
 .nuxt-link-exact-active {
   @apply text-primary;
 }
 
 .menu-is-closed {
-  display: none;
+  height: 0;
 }
 
 @media screen and (min-width: 1024px) {
