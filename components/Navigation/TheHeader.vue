@@ -94,6 +94,9 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .main-menu-link {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(0) !important;
     @apply inline-block text-left mt-0 mr-4 text-base py-0;
   }
 }
