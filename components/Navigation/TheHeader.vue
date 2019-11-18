@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 import ToggleButton from './ToggleButton'
 
 export default {
@@ -49,13 +50,24 @@ export default {
 
   data() {
     return {
-      menuOpen: false
+      menuOpen: false,
+      tl: gsap.timeline({ paused: true, reversed: true })
     }
+  },
+
+  mounted() {
+    this.tl.fromTo(
+      '.main-menu-link',
+      { x: -50, autoAlpha: 0, stagger: 0.2 },
+      { x: 0, autoAlpha: 1, stagger: 0.2 }
+    )
   },
 
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen
+
+      this.tl.restart()
     }
   }
 }
@@ -73,25 +85,16 @@ export default {
 }
 
 .main-menu-link {
-  transition-delay: 0.5s;
-  transform: translateX(-30px);
-  transition: all 0.5s ease;
-  @apply block text-center mt-4 py-6 text-2xl opacity-0;
+  @apply block text-center mt-4 py-6 text-2xl;
 }
 
 .main-menu-link:hover {
   @apply text-primary;
 }
 
-.menu-is-open .main-menu-link {
-  transform: translateX(0);
-  @apply opacity-100;
-}
-
 @media screen and (min-width: 1024px) {
   .main-menu-link {
-    transform: translateX(0);
-    @apply inline-block text-left mt-0 mr-4 text-base py-0 opacity-100;
+    @apply inline-block text-left mt-0 mr-4 text-base py-0;
   }
 }
 
