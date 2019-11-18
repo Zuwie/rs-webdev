@@ -42,8 +42,26 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-webfontloader',
+    '@bazzite/nuxt-optimized-images'
   ],
+  /*
+   ** Webfontloader config
+   ** See https://regenrek.com/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/#bonus-use-google-fonts-with-nuxt-js-and-tailwind
+   */
+  webfontloader: {
+    google: {
+      families: ['Lato:300,400,700']
+    }
+  },
+  /*
+   ** Optimize Images
+   ** See https://www.bazzite.com/docs/nuxt-optimized-images/
+   */
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
