@@ -105,4 +105,21 @@ a:hover {
 .btn-primary:hover {
   @apply bg-lightShade;
 }
+
+.dashed-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.dashed-list li::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 12.5px;
+}
 </style>
