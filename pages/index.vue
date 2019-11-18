@@ -24,11 +24,15 @@
     <section class="bg-darkShade text-white py-6">
       <div class="p-6 mb-10 mx-auto max-w-5xl">
         <h2 class="chapter-title text-white">What can I offer you?</h2>
-        <ul class="list-disc">
-          <li>Develop your personal Website using the latest technologies</li>
-          <li>Web Apps shaped to your needs</li>
-          <li>Consulting about the needs of your individual projects</li>
-          <li>
+        <ul class="dashed-list">
+          <li class="mb-2">
+            Develop your personal Website using the latest technologies
+          </li>
+          <li class="mb-2">Web Apps shaped to your needs</li>
+          <li class="mb-2">
+            Consulting about the needs of your individual projects
+          </li>
+          <li class="mb-2">
             Optimize your site to get higher ranked at Google's Search-Engine
           </li>
         </ul>
