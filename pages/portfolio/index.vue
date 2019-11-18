@@ -6,10 +6,7 @@
       <ProjectCard
         v-for="project in projects"
         :key="project.id"
-        :img="project.img"
-        :title="project.title"
-        :text="project.text"
-        :tags="project.tags"
+        v-bind:project="project"
       ></ProjectCard>
     </div>
   </div>
