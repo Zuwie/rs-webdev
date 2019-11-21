@@ -4,7 +4,7 @@
       href="#"
       class="max-w-sm md:max-w-full lg:max-w-sm rounded overflow-hidden shadow-lg lg:h-full block md:flex lg:flex-col"
     >
-      <img :src="img" class="w-full" alt="Sunset in the mountains" />
+      <img :src="project.img" class="w-full" alt="Sunset in the mountains" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{ project.title }}</div>
         <p class="text-gray-700 text-base">{{ project.text }}</p>
@@ -12,7 +12,7 @@
       <div class="px-6 py-4 lg:mt-auto">
         <span
           v-for="tag in project.tags"
-          class="inline-block bg-lightShade rounded-full px-3 py-1 text-sm font-semibold text-grey mr-2 mb-2 hover:bg-primary hover:text-white transition"
+          class="inline-block bg-primary text-lightShade rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 hover:bg-lightAccent hover:text-lightShade transition"
           >#{{ tag }}</span
         >
       </div>
