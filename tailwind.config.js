@@ -12,15 +12,15 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
-      black: '#000',
-      white: '#fff',
-      grey: '#202227',
+      lightShade: '#FFFFFF',
+      lightAccent: '#948FA5',
 
-      primary: '#09B3AF',
-      darkAccent: '#888D7E',
-      darkShade: '#2B2F43',
-      lightAccent: '#75BFCD',
-      lightShade: '#F8F5F5'
+      primary: '#574574',
+
+      darkAccent: '#7B7990',
+      darkShade: '#2E283A',
+
+      lightGrey: '#b7dddd'
     },
     fontFamily: {
       body: ['Lato']

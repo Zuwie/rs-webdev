@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-t-2 bg-darkShade text-white mt-10 p-6">
+  <footer class="border-t border-t-2 bg-darkShade text-lightShade mt-10 p-6">
     <div class="w-full lg:flex lg:justify-between">
       <ul class="lg:flex text-sm">
         <li>

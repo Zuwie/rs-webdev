@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center justify-between flex-wrap bg-white p-6 border-b border-b-2 border-lightShade fixed top-0 left-0 right-0 z-50"
+    class="flex items-center justify-between flex-wrap bg-lightShade p-6 border-b border-b-2 border-lightShade fixed top-0 left-0 right-0 z-50"
   >
     <nuxt-link to="/" class="block flex items-center flex-shrink-0 mr-6">
       <svg

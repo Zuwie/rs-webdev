@@ -32,7 +32,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #202227;
+  color: #16131c;
+  @apply bg-lightShade;
 }
 
 *,
@@ -66,7 +67,7 @@ a:hover {
   width: 66px;
   height: 4px;
   background: #09b3af;
-  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  background: linear-gradient(to right, #948fa5 0%, #574574 100%);
   border-radius: 2px;
 }
 
@@ -80,7 +81,7 @@ a:hover {
   width: 66px;
   height: 4px;
   background: #09b3af;
-  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  background: linear-gradient(to right, #948fa5 0%, #574574 100%);
   border-radius: 2px;
 }
 
@@ -91,7 +92,7 @@ a:hover {
 }
 
 .btn {
-  @apply font-bold py-2 px-4 rounded bg-darkShade text-white;
+  @apply font-bold py-2 px-4 rounded bg-darkShade text-lightShade;
 }
 
 .btn:hover {
@@ -99,11 +100,12 @@ a:hover {
 }
 
 .btn-primary {
-  @apply text-white bg-primary;
+  transition: all 0.2s ease;
+  @apply text-lightShade bg-primary;
 }
 
 .btn-primary:hover {
-  @apply bg-lightShade;
+  @apply bg-darkAccent;
 }
 
 .dashed-list li {
@@ -116,7 +118,7 @@ a:hover {
   display: inline-block;
   width: 15px;
   height: 2px;
-  background: linear-gradient(to right, #05dec1 0%, #09b3af 100%);
+  background: linear-gradient(to right, #948fa5 0%, #574574 100%);
   border-radius: 2px;
   position: absolute;
   left: 0;

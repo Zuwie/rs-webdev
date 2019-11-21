@@ -2,7 +2,7 @@
   <div>
     <!-- HERO -->
     <section class="relative">
-      <vue-particles color="#888D7E"></vue-particles>
+      <vue-particles color="#7B7990"></vue-particles>
       <div class="container">
         <div>
           <logo />
@@ -21,9 +21,9 @@
     </section>
 
     <!-- OFFER -->
-    <section class="bg-darkShade text-white py-6">
+    <section class="bg-darkShade text-lightShade py-6">
       <div class="p-6 mb-10 mx-auto max-w-5xl">
-        <h2 class="chapter-title text-white">What can I offer you?</h2>
+        <h2 class="chapter-title text-lightShadee">What can I offer you?</h2>
         <ul class="dashed-list">
           <li class="mb-2">
             Develop your personal Website using the latest technologies
@@ -40,8 +40,8 @@
     </section>
 
     <section>
-      <div class="p-6 py-12 mb-10 mx-auto max-w-5xl bg-white">
-        <h2 class="chapter-title text-grey">Why me?</h2>
+      <div class="p-6 py-12 mb-10 mx-auto max-w-5xl">
+        <h2 class="chapter-title">Why me?</h2>
 
         <div class="md:flex md:flex-row-reverse md:justify-between mt-12">
           <div class="md:w-2/5">
@@ -52,7 +52,7 @@
             />
           </div>
           <div class="md:w-3/5">
-            <div class="bg-white rounded p-6 shadow md:mr-4">
+            <div class="rounded p-6 shadow md:mr-4">
               <h3 class="font-bold text-2xl mb-6">Argument</h3>
               <p class="font-bold text-xl mb-4">
                 Lorem ipsum dolor amet whatever
@@ -78,7 +78,7 @@
             />
           </div>
           <div class="md:w-3/5">
-            <div class="bg-white rounded p-6 shadow md:ml-4">
+            <div class="rounded p-6 shadow md:ml-4">
               <h3 class="font-bold text-2xl mb-6">Argument</h3>
               <p class="font-bold text-xl mb-4">
                 I will build you robust, scalable web-apps or websites so you
@@ -104,7 +104,7 @@
             />
           </div>
           <div class="md:w-3/5">
-            <div class="bg-white rounded p-6 shadow md:mr-4">
+            <div class="rounded p-6 shadow md:mr-4">
               <h3 class="font-bold text-2xl mb-6">Argument</h3>
               <p class="font-bold text-xl mb-4">
                 Lorem ipsum dolor amet whatever
