@@ -4,7 +4,10 @@
       href="#"
       class="max-w-sm md:max-w-full lg:max-w-sm rounded overflow-hidden shadow-lg lg:h-full block md:flex lg:flex-col"
     >
-      <img :src="project.img" class="w-full" alt="Sunset in the mountains" />
+      <img
+        :src="project.img ? project.img : 'https://via.placeholder.com/304x160'"
+        class="w-full"
+      />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{ project.title }}</div>
         <p class="text-gray-700 text-base">{{ project.text }}</p>

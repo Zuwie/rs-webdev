@@ -1,6 +1,10 @@
 <template>
   <div class="error-page p-12">
-    <img src="~assets/404.png" alt="A man looking out for something" />
+    <img
+      :srcset="require('~/assets/404.png').srcSet"
+      alt="A man looking out for something"
+    />
+    :srcset="require('~/assets/rafael-seifert.jpg').srcSet"
     <h1 class="text-3xl">Oops, something went wrong!</h1>
     <p>Back to <a href="/">safety</a>!</p>
   </div>

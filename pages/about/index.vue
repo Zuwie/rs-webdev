@@ -11,7 +11,10 @@
     </p>
 
     <div class="inline-block rounded-lg overflow-hidden">
-      <img src="~assets/rafael-seifert.jpg" alt="Picture of Rafael Seifert" />
+      <img
+        :srcset="require('~/assets/rafael-seifert.jpg').srcSet"
+        alt="Picture of Rafael Seifert"
+      />
     </div>
 
     <p>

@@ -47,7 +47,7 @@
           <div class="md:w-2/5">
             <img
               class="mb-2 md:mb-0"
-              src="~assets/entry.png"
+              :srcset="require('~/assets/entry.png').srcSet"
               alt="A person entering a portal"
             />
           </div>
@@ -73,7 +73,7 @@
           <div class="md:w-2/5">
             <img
               class="mb-2 md:mb-0"
-              src="~assets/searching.png"
+              :srcset="require('~/assets/searching.png').srcSet"
               alt="A person searching"
             />
           </div>
@@ -99,7 +99,7 @@
           <div class="md:w-2/5">
             <img
               class="mb-2 md:mb-0"
-              src="~assets/order-completed.png"
+              :srcset="require('~/assets/order-completed.png').srcSet"
               alt="Order completed"
             />
           </div>

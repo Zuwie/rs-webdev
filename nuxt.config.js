@@ -44,7 +44,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     'nuxt-webfontloader',
-    '@bazzite/nuxt-optimized-images'
+    'nuxt-responsive-loader'
   ],
   /*
    ** Webfontloader config
@@ -57,11 +57,9 @@ export default {
   },
   /*
    ** Optimize Images
-   ** See https://www.bazzite.com/docs/nuxt-optimized-images/
+   ** See https://www.npmjs.com/package/nuxt-responsive-loader?utm_source=share&utm_medium=ios_app
    */
-  optimizedImages: {
-    optimizeImages: true
-  },
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
