@@ -7,8 +7,12 @@
         v-for="project in projects"
         :key="project.id"
         v-bind:project="project"
-      ></ProjectCard>
+      />
     </div>
+    <p>
+      ** made as Frontend-Developer at
+      <a href="https://www.nexxar.at">nexxar</a>
+    </p>
   </div>
 </template>
 
@@ -26,13 +30,13 @@ export default {
         {
           img:
             'https://annual-report2018.prosiebensat1.com/layout/img/og-social.png',
-          title: 'Prosiebensat1',
+          title: 'Prosiebensat1 **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Animation', 'Video', 'Slider']
         },
         {
-          title: 'Merck',
+          title: 'Merck **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Animation', 'Games', 'colorfull']
@@ -40,25 +44,25 @@ export default {
         {
           img:
             'https://csrreport.bilfinger.com/2018/sustainability-report/layout/img/og-social.png',
-          title: 'Bilfinger',
+          title: 'Bilfinger **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Animation', 'Video']
         },
         {
-          title: 'HHLA',
+          title: 'HHLA **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Animation', 'Video', 'Charts']
         },
         {
-          title: 'Shell',
+          title: 'Shell **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Accessibility']
         },
         {
-          title: 'Essity',
+          title: 'Essity **',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
           tags: ['Animation', 'Filter']
